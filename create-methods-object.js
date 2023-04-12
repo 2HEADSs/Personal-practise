@@ -14,7 +14,8 @@ let car = {
 
     }
 }
-
+car['honk']()
+console.log('------------- ');
 car.honk();
 car.honk2();
 car.honk3();
