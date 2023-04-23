@@ -41,4 +41,4 @@ let supermen = {
 introduceLonger.bind(supermen, 'Ivanka', 'Stoqnowa') //bind returns new function
 
 let superIntroduction = introduceLonger.bind(supermen, 'Lois', 'Lane') ;
-superIntroduction(); //log the result
+superIntroduction(); //log the result 
