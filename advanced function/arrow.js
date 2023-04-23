@@ -6,7 +6,7 @@ const person = {
 
         // function getFullName - same as  const getFullName = function();
         const getFullName = function () {
-            console.log(this);
+            console.log(this);//this is global
             return this.firstName + ' ' + this.lastName
         };
 
