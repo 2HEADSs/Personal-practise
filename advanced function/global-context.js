@@ -22,3 +22,8 @@ obj.greed() //object/method  invokation
 
 let greed = obj.greed; //copy  only the function by reference
 greed() //global invokation
+
+//DOM Element - must execute in browser
+element.addEventListener('click', function () {
+    console.log(this);
+})
