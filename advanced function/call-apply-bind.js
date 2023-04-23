@@ -8,4 +8,4 @@ let personObject = {
     name: 'Pesho'
 };
 
-introduce.call(personObject)
+introduce.call(personObject); //invoke using call
