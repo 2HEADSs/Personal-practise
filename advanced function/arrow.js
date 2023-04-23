@@ -13,4 +13,4 @@ const person = {
 
     }
 }
-person.introduce() //Hello, my name is undefined undefined - it is called without
+person.introduce();
