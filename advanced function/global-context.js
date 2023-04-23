@@ -7,8 +7,8 @@ function random() {
     // return Math.random();
 }
 
-//global invokation
-random();
+
+random();//global invokation
 
 //Object context
 let obj = {
@@ -17,5 +17,8 @@ let obj = {
         console.log(`Hello! My name is ${this.name}`);
     }
 }
-//object/method  invokation
-obj.greed()
+
+obj.greed() //object/method  invokation
+
+let greed = obj.greed; //copy  only the function by reference
+greed() //global invokation
