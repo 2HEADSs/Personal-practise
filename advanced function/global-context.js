@@ -26,4 +26,5 @@ greed() //global invokation
 // //DOM Element - must execute in browser
 // element.addEventListener('click', function () {
 //     console.log(this);
-// })
+// }) 
+//this willl be dom element
