@@ -1,6 +1,6 @@
 //Global context
 function random() {
-    console.log(this == global);
+    console.log(`${this == global} random`);
 
     // //dom
     // console.log(this == window);
@@ -9,6 +9,12 @@ function random() {
 
 
 random();//global invokation
+
+let math = {
+    random:random
+};
+
+math.random()//method invokation - this is math obj
 
 //Object context
 let obj = {
