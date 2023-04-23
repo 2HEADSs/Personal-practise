@@ -17,4 +17,5 @@ let obj = {
         console.log(`Hello! My name is ${this.name}`);
     }
 }
+//object/method  invokation
 obj.greed()
