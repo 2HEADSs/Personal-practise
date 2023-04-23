@@ -1,3 +1,4 @@
+//Global context
 function random() {
     console.log(this == global);
     
