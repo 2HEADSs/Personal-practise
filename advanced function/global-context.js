@@ -28,3 +28,19 @@ greed() //global invokation
 //     console.log(this);
 // }) 
 //this willl be dom element
+
+//nested function
+function a() {
+    function b() {
+        function c() {
+            function d() {
+                console.log(this);
+            }
+            d()
+        }
+        c()
+    }
+    b()
+};
+
+a();
