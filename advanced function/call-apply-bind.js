@@ -9,3 +9,4 @@ let personObject = {
 };
 
 introduce.call(personObject); //invoke using call;
+introduce.call({name: 'Gosho'}); //invoke using call and set this.name = 'Gosho';
