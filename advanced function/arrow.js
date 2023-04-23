@@ -6,6 +6,7 @@ const person = {
 
         // function getFullName - same as  const getFullName = function();
         const getFullName = function () {
+            console.log(this);
             return this.firstName + ' ' + this.lastName
         };
 
