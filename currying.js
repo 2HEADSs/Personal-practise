@@ -5,4 +5,7 @@ function sum3(a) {
         }
     }
 }
+
+let arrowSum = a => b => c => a + b + c
 console.log(sum3(5)(6)(8));
+console.log(arrowSum(5)(6)(8));
