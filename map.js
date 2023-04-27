@@ -7,16 +7,19 @@ console.log('---------------');
 
 console.log(demoMap.get('name'));
 console.log(demoMap.get('age'));
-
-console.log('---------------');
+console.log('----------------------------------->changing property');
 demoMap.set('age', 21);
+
 console.log(demoMap);
-console.log('---------------');
+console.log('----------------------------------->same as object');
 
 console.log(demoMap.keys());
 console.log(demoMap.values());
 console.log(demoMap.entries());
-console.log('---------------');
+console.log('----------------------------------->number as key');
 
 demoMap.set(1, 'One');
+console.log(demoMap);
+console.log('----------------------------------->Object as key');
+demoMap.set({ gender: 'male' }, true)
 console.log(demoMap);
