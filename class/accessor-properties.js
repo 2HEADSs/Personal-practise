@@ -15,6 +15,9 @@ class Circle {
 let firstCircle = new Circle(2);
 console.log(`Radius = ${firstCircle.radius}`);
 console.log(`Diameter = ${firstCircle.diameter}`);
+firstCircle.radius = 12;
+console.log(`Radius = ${firstCircle.radius}`);
+console.log(`Diameter = ${firstCircle.diameter}`);
 //set dimeter via set 
 firstCircle.diameter = 10;
 console.log(`Diameter = ${firstCircle.diameter}`);
