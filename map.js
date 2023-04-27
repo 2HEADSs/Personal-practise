@@ -21,5 +21,7 @@ console.log('----------------------------------->number as key');
 demoMap.set(1, 'One');
 console.log(demoMap);
 console.log('----------------------------------->Object as key');
-demoMap.set({ gender: 'male' }, true)
+let obj = { gender: 'male' }
+demoMap.set(obj, 'gender object')
 console.log(demoMap);
+console.log(demoMap.get(obj));
