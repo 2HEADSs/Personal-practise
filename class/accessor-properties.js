@@ -1,4 +1,6 @@
 class Circle {
+    //private property - can not be used ouside the class
+    #pi = Math.PI
     constructor(radius) {
         this.radius = radius;
     };
@@ -17,7 +19,7 @@ console.log(`Radius = ${firstCircle.radius}`);
 console.log(`Diameter = ${firstCircle.diameter}`);
 firstCircle.radius = 12;
 console.log(`Radius = ${firstCircle.radius}`);
-console.log(`Diameter = ${firstCircle.diameter}`); 
+console.log(`Diameter = ${firstCircle.diameter}`);
 //set dimeter via set 
 firstCircle.diameter = 10;
 console.log(`Diameter = ${firstCircle.diameter}`);
