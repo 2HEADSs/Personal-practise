@@ -8,6 +8,8 @@ let dog = {
 //make prototype of object Argus
 let argus = Object.create(dog);
 console.log(argus);
+dog.makeSound(); //Generic name bark!!!
+console.log('---------');
 argus.makeSound(); //Generic name bark!!!
 argus.name = 'Argus';
 argus.makeSound(); //Argus bark!!!
