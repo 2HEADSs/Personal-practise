@@ -16,6 +16,8 @@ console.log(firstPerson);
 Person.prototype.greet = function () {
     console.log(`Hello! My name is ${this.name} and I'm ${this.age} years old.`);
 }
+Person.prototype.hoby = 'Bicycle';
+console.log(firstPerson.hoby);
 
 firstPerson.greet();
 secondPerson.greet();
