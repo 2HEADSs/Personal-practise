@@ -16,4 +16,6 @@ console.log(person);
 for (const key in person) {
     console.log(key);
     //age- only enumarable property
-}
+};
+
+console.log(JSON.stringify(person));
