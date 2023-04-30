@@ -8,12 +8,17 @@ Animal.prototype.activity = function () {
     console.log(`${this.name} - eat`);
 };
 
-let cat = new Animal('Cat', 'Garry', 4);
-console.log(cat);
+let dog = new Animal('Dog', 'Kiara', 4);
+console.log(dog);
 
-function Cat(name, age) {
-    Animal.call(this, 'Cat', name, age);
+function Dog(name, age) {
+    Animal.call(this, 'Dog', name, age);
 }
 
 //the prototype of cat object will have protype which is prototype of Animal
-Cat.prototype = Object.create(Animal.prototype)
+Dog.prototype = Object.create(Animal.prototype);
+
+let argus = new Dog('Argus', 1);
+console.log(argus);
+argus.activity();
+console.log(argus.type);
