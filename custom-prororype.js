@@ -5,7 +5,9 @@ let dog = {
     }
 };
 
-//make prororype of object Argus
+//make prototype of object Argus
 let argus = Object.create(dog);
 console.log(argus);
-argus.makeSound()
+argus.makeSound(); //Generic name bark!!!
+argus.name = 'Argus';
+argus.makeSound(); //Argus bark!!!
