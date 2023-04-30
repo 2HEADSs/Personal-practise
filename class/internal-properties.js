@@ -3,4 +3,4 @@ let person = {
     age: 20
 };
 // console.log(Object.getOwnPropertyDescriptors(person));
-console.log(Object.getOwnPropertyDescriptor(person, 'name'));
+let internalNamePrperies = Object.getOwnPropertyDescriptor(person, 'name');
