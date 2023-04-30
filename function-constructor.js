@@ -3,7 +3,7 @@ function Person(name, age, height) {
     this.age = age;
     this.height = height;
     //This will create function for each instance
-    // this.greed = function () {
+    // this.greet = function () {
     //     console.log(`Hello! My name is ${this.name}`);
     // };
 };
@@ -13,10 +13,10 @@ let secondPerson = new Person('Gosho', 31, 177);
 
 console.log(firstPerson);
 
-Person.prototype.greed = function () {
+Person.prototype.greet = function () {
     console.log(`Hello! My name is ${this.name} and I'm ${this.age} years old.`);
 }
 
-firstPerson.greed();
-secondPerson.greed();
-console.log(firstPerson.greed === secondPerson.greed); //true - same reference
+firstPerson.greet();
+secondPerson.greet();
+console.log(firstPerson.greet === secondPerson.greed); //true - same reference
