@@ -19,3 +19,4 @@ Person.prototype.greed = function () {
 
 firstPerson.greed();
 secondPerson.greed();
+console.log(firstPerson.greed === secondPerson.greed); //true - same reference
