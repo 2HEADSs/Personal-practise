@@ -7,6 +7,7 @@ function execute(x, sec) {
         }, sec * 1000);
     });
 };
+
 async function serialFlow() {
     let result1 = await execute(1, 1);
     let result2 = await execute(2, 2);
@@ -14,3 +15,5 @@ async function serialFlow() {
     let finalResult = result1 + result2 + result3;
     console.log(finalResult);
 };
+
+serialFlow();
