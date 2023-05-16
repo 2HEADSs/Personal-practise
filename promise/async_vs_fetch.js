@@ -1,8 +1,8 @@
 function execute(x, sec) {
     return new Promise(resolve => {
-        console.log('Start: ' + x);
+        console.log('Start: ' + x + ' Execute Fn');
         setTimeout(() => {
-            console.log('End:' + x);
+            console.log('End:' + x + ' Execute Fn');
             resolve(x);
         }, sec * 1000);
     });
@@ -17,6 +17,7 @@ async function serialFlow() {
 };
 serialFlow();
 
+console.log('------------');
 
 async function parallelFlow() {
     let result1 = execute(1, 1);
@@ -24,7 +25,7 @@ async function parallelFlow() {
     let result3 = execute(3, 3);
     let finalResult = await result1 + await result2 +
         await result3;
-    console.log(finalResult);
+    console.log('parallelFlow ' + finalResult);
 };
 
 parallelFlow();
