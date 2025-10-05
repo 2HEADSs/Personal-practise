@@ -7,18 +7,8 @@ var fibGenerator = function* () {
   let arr = [];
   arr[0] = 0;
 
-  //   while (true) {
-  //     yield arr[arr.length - 1];
-  //     if (arr.length == 1) {
-  //       arr.push(1);
-  //     } else {
-  //       arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
-  //       console.log(arr);
-  //     }
-  //   }
-
   while (true) {
-      let length = arr.length;
+    let length = arr.length;
     yield arr[length - 1];
     if (arr.length == 1) {
       arr[1] = 1;
