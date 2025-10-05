@@ -4,16 +4,43 @@
  * @return {Generator<number>}
  */
 var fibGenerator = function* () {
-    let arr = [];
-    
+  let arr = [];
+  arr[0] = 0;
+
+  //   while (true) {
+  //     yield arr[arr.length - 1];
+  //     if (arr.length == 1) {
+  //       arr.push(1);
+  //     } else {
+  //       arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+  //       console.log(arr);
+  //     }
+  //   }
+
+  while (true) {
+      let length = arr.length;
+    yield arr[length - 1];
+    if (arr.length == 1) {
+      arr[1] = 1;
+    } else {
+      arr[length] = arr[length - 1] + arr[length - 2];
+    }
+  }
 };
 
-/**
- * const gen = fibGenerator();
- * gen.next().value; // 0
- * gen.next().value; // 1
- */
-//  CONDITION
+const gen = fibGenerator();
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+gen.next().value;
+gen.next().value; // 1
 
 /*
 Write a generator function that returns a generator object which yields the fibonacci sequence.
