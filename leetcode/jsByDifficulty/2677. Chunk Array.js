@@ -4,29 +4,37 @@
  * @param {number} size
  * @return {Array}
  */
+// var chunk = function (arr, size) {
+//   let result = [];
+//   let tempArr = [];
+//   if (arr.length === 0) {
+//     return result;
+//   }
+//   if (size > arr.length) {
+//     result.push(arr);
+//     return result;
+//   }
+//   let index = 0;
+//   while (arr.length > 0) {
+//     for (let i = 0; i < size; i++) {
+//       if (arr[i] === undefined) {
+//         break;
+//       }
+//       tempArr.push(arr[i]);
+//       index++;
+//     }
+//     result.push(tempArr);
+//     tempArr = [];
+//     arr = arr.slice(index);
+//     index = 0;
+//   }
+//   return result;
+// };
+
 var chunk = function (arr, size) {
   let result = [];
-  let tempArr = [];
-  if (arr.length === 0) {
-    return result;
-  }
-  if (size > arr.length) {
-    result.push(arr);
-    return result;
-  }
-  let index = 0;
-  while (arr.length > 0) {
-    for (let i = 0; i < size; i++) {
-      if (arr[i] === undefined) {
-        break;
-      }
-      tempArr.push(arr[i]);
-      index++;
-    }
-    result.push(tempArr);
-    tempArr = [];
-    arr = arr.slice(index);
-    index = 0;
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size));
   }
   return result;
 };
