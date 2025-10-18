@@ -29,7 +29,7 @@ class Calculator {
    * @return {Calculator}
    */
   multiply(value) {
-    this.value = this.value * value;
+    this.value *= value;
     return this;
   }
 
@@ -38,10 +38,9 @@ class Calculator {
    * @return {Calculator}
    */
   divide(value) {
-    if (value == 0) {
-      throw new Error("Division by zero is not allowed");
-    }
-    this.value = this.value / value;
+    if (value == 0) throw new Error("Division by zero is not allowed");
+
+    this.value /= value;
     return this;
   }
 
@@ -50,7 +49,7 @@ class Calculator {
    * @return {Calculator}
    */
   power(value) {
-    this.value = this.value ** value;
+    this.value **= value;
     return this;
   }
 
