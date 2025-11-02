@@ -1,20 +1,25 @@
 function snail(nums, rows, cols) {
-  let result = [];
   let length = nums.length;
   if (rows * cols !== length) {
-    return result;
+    return [];
   }
+  let result = Array.from({ length: rows }, () => []);
 
-  for (let i = 0; i < rows; i++) {
-    console.log(1);
-    result.push([]);
-  }
-  for (let k = 0; k < rows; k++) {
-    for (let i = k; i <= cols; i++) {
-      result[i].push(nums.shift());
+  let index = 0;
+  for (let c = 0; c < cols; c++) {
+    if (c % 2 == 0) {
+      for (let r = 0; r < rows; r++) {
+        result[r].push(nums[index]);
+        index++;
+      }
+    } else {
+      for (let r = rows - 1; r >= 0; r--) {
+        result[r].push(nums[index]);
+        index++;
+      }
     }
   }
-  console.log(result[0]);
+  console.log(result);
 }
 
 snail(
